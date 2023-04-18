@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <a href="#" class="logo"><span>My</span> Portfolio_</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1xLWZnGAHgqXQFUGejhcSUEG54V5VZE0lacUN7Jh5v2o/edit"
+              >Skill</a
+            >
+          </li>
+        </ul>
+      </header>
+      <div class="content">
+        <h3>Hey_</h3>
+        <h2>I am <span id="element"></span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+          natus repellendus. Reprehenderit tempore ea repudiandae error quia,
+          accusantium consectetur doloribus nemo, non excepturi quod numquam.
+        </p>
+        <button>Hire_me</button>
+        <button class="chat">
+          <ion-icon name="chatbubbles-outline"></ion-icon>Let's Chat
+        </button>
+      </div>
+      <img src="colors.png" class="colors" />
+      <img src="man.png" class="man" />
+      <ul class="sci">
+        <li>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </li>
+      </ul>
+      <div class="daynight">
+        <ion-icon name="moon-outline"></ion-icon>
+        <ion-icon name="sunny-outline"></ion-icon>
+      </div>
+    </section>
+    <!-- add the latest project  -->
+    <section">
+      <h2 class="logo"><span>Latest</span> Project_</h2>
+    </section>
+    <section class="poster">
+      <header></header>
+      <div class="container">
+        <div class="card">
+          <div class="imgbx">
+            <a href="https://saurav2495.github.io/New_year_notify/">
+              <img src="pic1.jpg" />
+            </a>
+            <h2>New Year Notifer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa
+              necessitatibus temporibus, rerum voluptatibus sint ut iste fugit
+              quas laborum!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="imgbx">
+            <a href="https://saurav2495.github.io/Starbuck_Landing_Page/">
+              <img src="pic2.jpg" />
+            </a>
+            <h2>startbuks Landing page </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa
+              necessitatibus temporibus, rerum voluptatibus sint ut iste fugit
+              quas laborum!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="imgbx">
+            <a href="https://saurav2495.github.io/Coco_cola-Landing-Page-/">
+              <img src="pic3.jpg" />
+            </a>
+            <h2>Coco Cola Landing Page</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa
+              necessitatibus temporibus, rerum voluptatibus sint ut iste fugit
+              quas laborum!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="imgbx">
+            <a href="https://saurav2495.github.io/product_overview/">
+              <img src="pic4.jpg" />
+            </a>
+            <h2>Product Overview</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa
+              necessitatibus temporibus, rerum voluptatibus sint ut iste fugit
+              quas laborum!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    type="nomodule"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Saurav", "Designer", "Coder", "video_editor"],
+      loop: true,
+      typeSpeed: 70,
+    });
+
+    let banner = document.querySelector(".banner");
+    let daynight = document.querySelector(".daynight");
+    daynight.onclick = function () {
+      banner.classList.toggle("night");
+    };
+  </script>
+</html>
